@@ -16,7 +16,7 @@ You need to create an account in Rapid Api to get your world data api key.
 ## App UI
 
 <div>
-  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/master/screenshots/Local%20Data.png.jpg"  height="535" width="270" />
-  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/master/screenshots/World%20Data.png.jpg" height="535" width="270" />
-  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/master/screenshots/Drawer.png.jpg" height="535" width="270" />
+  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/main/screenshots/Local%20Data.png.jpg"  height="535" width="270" />
+  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/main/screenshots/World%20Data.png.jpg" height="535" width="270" />
+  <img src="https://github.com/Premmmm/COVID-19-Tracker-Flutter/blob/main/screenshots/Drawer.png.jpg" height="535" width="270" />
 </div><br><br>
