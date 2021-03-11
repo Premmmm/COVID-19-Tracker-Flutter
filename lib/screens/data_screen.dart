@@ -50,7 +50,6 @@ class _DataScreenState extends State<DataScreen> {
   Widget build(BuildContext context) {
     if (confirm.length == 0) {
       return Scaffold(
-          resizeToAvoidBottomPadding: false,
           backgroundColor: kBackgroundColor,
           floatingActionButton: FloatingActionButton(
             onPressed: () {
@@ -76,7 +75,6 @@ class _DataScreenState extends State<DataScreen> {
           ));
     } else
       return Scaffold(
-        resizeToAvoidBottomPadding: false,
         backgroundColor: kBackgroundColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () {

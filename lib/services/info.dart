@@ -7,7 +7,6 @@ class Info {
         await http.get('https://api.covid19india.org/data.json');
 
     var data = response.body;
-
     if (response.statusCode == 200) {
       print(response.statusCode);
       return jsonDecode(data);

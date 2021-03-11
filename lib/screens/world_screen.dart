@@ -113,6 +113,7 @@ class _WorldScreenState extends State<WorldScreen> {
                         suffixIcon: IconButton(
                             icon: Icon(Icons.send),
                             onPressed: () {
+                              FocusScope.of(context).unfocus();
                               setState(() {
                                 gettingCountryData(countryName);
                                 FocusScope.of(context).unfocus();
