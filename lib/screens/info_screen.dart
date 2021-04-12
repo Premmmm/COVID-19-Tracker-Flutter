@@ -1,8 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:covid19tracker2/services/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:package_info/package_info.dart';
 
-class InfoScreen extends StatelessWidget {
+class InfoScreen extends StatefulWidget {
+  @override
+  _InfoScreenState createState() => _InfoScreenState();
+}
+
+class _InfoScreenState extends State<InfoScreen> {
+  String version;
+
+  @override
+  void initState() {
+    super.initState();
+    getInfo();
+  }
+
+  Future<void> getInfo() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    setState(() {
+      version = packageInfo.version;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +35,7 @@ class InfoScreen extends StatelessWidget {
             SizedBox(height: 150),
             Center(
               child: Text(
-                'Version 1.0.10',
+                'Version $version',
                 style: GoogleFonts.montserrat(
                     fontSize: 25,
                     color: Colors.white,
@@ -22,9 +43,7 @@ class InfoScreen extends StatelessWidget {
                     letterSpacing: 2),
               ),
             ),
-            SizedBox(
-              height: 15,
-            ),
+            const SizedBox(height: 15),
             Column(
               children: <Widget>[
                 Center(
@@ -50,9 +69,7 @@ class InfoScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 300,
-            ),
+            const SizedBox(height: 300),
             Center(
                 child: Text(
               'From\nS.PREM RAJ',
